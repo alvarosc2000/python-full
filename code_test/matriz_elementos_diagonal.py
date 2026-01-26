@@ -1,9 +1,10 @@
 def elementos_diagonal(matriz):
     elementos = []
+
     for fila in range(len(matriz)):
-        for colum in range(len(matriz[0])):
-            if fila == colum:
-                elementos.append(matriz[fila][colum])
+        for col in range(len(matriz[0])):
+            if fila == col:
+                elementos.append(matriz[fila][col])
     return elementos
 
 if __name__ == "__main__":

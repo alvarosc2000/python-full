@@ -1,10 +1,8 @@
 def invertir_lista(cadena):
-    aux = []
-    
-    for elem in range(len(cadena)-1,-1,-1):
-        aux.append(cadena[elem])
-    
-    return aux
+    lista = []
 
+    for i in range(len(cadena)-1,-1,-1):
+        lista.append(cadena[i])
+    return lista
 
 print(invertir_lista(["a", "b", "c"]))

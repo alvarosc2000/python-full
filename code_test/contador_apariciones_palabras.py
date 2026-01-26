@@ -1,6 +1,13 @@
-from collections import Counter
+def apariciones(cadena):
+    dicc = {}
 
-texto = "hola mundo hola python mundo python hola"
-lista_palabras = texto.split()
-conteo_palabras = Counter(lista_palabras)
-print(conteo_palabras) # Salida: Counter({'hola': 3, 'mundo': 2, 'python': 2})
+
+    for palabra in cadena:
+        if palabra in dicc:
+            dicc[palabra]  += 1
+        else:
+            dicc[palabra] = 1
+
+    return dicc
+
+print(apariciones([1,3,3,4,2]))

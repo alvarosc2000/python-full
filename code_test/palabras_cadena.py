@@ -1,8 +1,4 @@
 def  contador_palabras(cadena):
-    contador = 0
-    for elem in range(len(cadena)):
-        if cadena[elem] == " ":
-            contador+=1
-    return contador
+    return (len(cadena.split()))
 
-print(contador_palabras("Hola mundo desde Python"))
+print(contador_palabras("Hola mundo desde Python  "))

@@ -1,14 +1,16 @@
 def allLongestStrings(cadena):
-    mayor_long = 0
-    for elem in cadena:
-        if len(elem) > mayor_long:
-            mayor_long = len(elem)
-    
-    aux = []
+    mayor = 0
 
-    for e in cadena:
-        if len(e) == mayor_long:
-            aux.append(e)
-    return aux
+    for elem in cadena:
+        if len(elem) > mayor:
+            mayor = len(elem)
+    
+    cadena_aux = []
+
+    for elem in cadena:
+        if len(elem) == mayor:
+            cadena_aux.append(elem)
+    
+    return cadena_aux
     
 print(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]))  # ["aba", "vcd", "aba"]

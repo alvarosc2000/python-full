@@ -1,8 +1,8 @@
 def reverse(cadena):
-    cd = ""
+    cf = ""
     for i in range(len(cadena)-1,-1,-1):
-        cd += cadena[i]
-    return cd
+        cf += cadena[i]
+    return cf
 
 
 print(reverse("Hola Mundo"))
